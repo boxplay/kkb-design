@@ -1,0 +1,22 @@
+@import '../style/default.less';
+
+.@{ant-prefix}-KKBTree-treeItem {
+  display: flex;
+
+  .@{ant-prefix}-KKBTree-treeTitle {
+    flex: 1;
+  }
+  .@{ant-prefix}-KKBTree-treeAction-hover {
+    display: none;
+  }
+  
+  &:hover {
+    .@{ant-prefix}-KKBTree-treeAction-hover {
+      display: block;
+    }
+  }
+
+  .@{ant-prefix}-KKBTree-dragIcon {
+    cursor: move;
+  }
+}

@@ -1,0 +1,60 @@
+@import '../style/default.less';
+
+.@{ant-prefix}-KKBSearch-dyFormWrap {
+  .@{ant-prefix}-col.@{ant-prefix}-form-item-label {
+    min-width: 100px;
+    // text-align: left;
+  }
+
+  .@{ant-prefix}-picker,
+  .@{ant-prefix}-picker-range,
+  .@{ant-prefix}-input-number {
+    width: 100%;
+  }
+
+  .@{ant-prefix}-form-item {
+    margin-bottom: 16px;
+  }
+  .@{ant-prefix}-form-item-control {
+    max-width: calc(100% - 100px);
+  }
+
+  .@{ant-prefix}-collapse-header{
+    text-align: center;
+    padding: 0 !important;
+    line-height: 1.5715;
+    position: relative;
+    height: 32px;
+    padding: 4px 15px;
+    .@{ant-prefix}-collapse-arrow{
+      position:initial !important;
+    }
+
+  }
+  .collapse-btn {
+    display:flex;
+    align-items: center;
+    color: @primary-color;
+    &:hover {
+      color: @primary-color;
+      cursor: pointer;
+    }
+    margin-right: 16px;
+  }
+  .collapse-btn-active {
+    
+  }
+  .@{ant-prefix}-collapse-content-active {
+    height: 0;
+  }
+
+  .hide-collapse{
+    display: none;
+  }
+}
+
+.@{ant-prefix}-KKBSearch-dyFormWrapOther{
+  .@{ant-prefix}-col.@{ant-prefix}-form-item-label{
+    min-width: auto;
+  }
+}

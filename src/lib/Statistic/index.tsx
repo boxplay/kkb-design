@@ -1,0 +1,2 @@
+export { Statistic } from 'antd'
+

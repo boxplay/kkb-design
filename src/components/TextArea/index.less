@@ -1,0 +1,34 @@
+@import '../../lib/style/default.less';
+
+.@{ant-prefix}-textAreaWrap {
+  position: relative;
+  // margin-bottom: 15px;
+  --textAreaH: 150px;
+  textarea {
+    height: var(--textAreaH) !important;
+  }
+
+  .@{ant-prefix}-textAreaBox {
+    // margin-top: 4px;
+  }
+}
+
+.@{ant-prefix}-textArea-tips {
+  &::after {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: rgba(205, 191, 197, 0.7);
+    content: '最多可输入'attr(data-num) '字';
+  }
+}
+
+.@{ant-prefix}-textArea-tips-formatter {
+  &::after {
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    color: rgba(205, 191, 197, 0.7);
+    content: attr(data-tips);
+  }
+}

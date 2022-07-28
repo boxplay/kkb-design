@@ -1,0 +1,101 @@
+[
+    {
+        "value": "110000",
+        "label": "北京",
+        "children": [
+            {
+                "value": "110100",
+                "label": "北京",
+                "pre": "京",
+                "level": 2
+            }
+        ],
+        "level": 1
+    },
+    {
+        "value": "120000",
+        "label": "天津",
+        "children": [
+            {
+                "value": "120100",
+                "label": "天津",
+                "pre": "津",
+                "level": 2
+            }
+        ],
+        "level": 1
+    },
+    {
+        "value": "130000",
+        "label": "河北省",
+        "children": [
+            {
+                "value": "130100",
+                "label": "石家庄",
+                "pre": "冀A",
+                "level": 2
+            },
+            {
+                "value": "130200",
+                "label": "唐山",
+                "pre": "冀B",
+                "level": 2
+            },
+            {
+                "value": "130300",
+                "label": "秦皇岛",
+                "pre": "冀C",
+                "level": 2
+            },
+            {
+                "value": "130400",
+                "label": "邯郸",
+                "pre": "冀D",
+                "level": 2
+            },
+            {
+                "value": "130500",
+                "label": "邢台",
+                "pre": "冀E",
+                "level": 2
+            },
+            {
+                "value": "130600",
+                "label": "保定",
+                "pre": "冀F",
+                "level": 2
+            },
+            {
+                "value": "130700",
+                "label": "张家口",
+                "pre": "冀G",
+                "level": 2
+            },
+            {
+                "value": "130800",
+                "label": "承德",
+                "pre": "冀H",
+                "level": 2
+            },
+            {
+                "value": "130900",
+                "label": "沧州",
+                "pre": "冀J",
+                "level": 2
+            },
+            {
+                "value": "131000",
+                "label": "廊坊",
+                "pre": "冀R",
+                "level": 2
+            },
+            {
+                "value": "131100",
+                "label": "衡水",
+                "pre": "冀T",
+                "level": 2
+            }
+        ],
+        "level": 1
+    }
+]

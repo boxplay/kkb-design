@@ -1,0 +1,221 @@
+@import '../style/default.less';
+
+.@{ant-prefix}-formItemWrap {
+  // min-width: 200px;
+  // max-width: 650px;
+}
+.@{ant-prefix}-KKBForm-dyFormWrap {
+  position: relative;
+  background-color:#fff; 
+  padding: 32px 0;
+  // .@{ant-prefix}-KKBForm-title{
+  //   margin: 0 24px 32px;
+  //   padding-left:24px;
+  //   height: 56px; 
+  //   line-height: 56px;
+  //   font-size: 16px;
+  //   font-weight: 500;
+  //   border-bottom: 1px solid  rgba(0, 0, 0, 0.06);
+  // }
+  .@{ant-prefix}-KKBFormPage-btn{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    .@{ant-prefix}-row-end{
+      margin-top: -24px;
+    }
+  }
+  .@{ant-prefix}-kkbForm-outFormWrap{
+    width: 180px;
+    position: absolute;
+    top: -18px;
+    left: 690px
+  }
+
+  .@{ant-prefix}-form-item-explain{
+    // margin: 8px 0 24px 0;
+    font-size: 12px;
+    // line-height: normal;
+    // min-height: 0;
+  }
+ 
+  .@{ant-prefix}-form-horizontal {
+    .@{ant-prefix}-dyComOperateItem{
+      .@{ant-prefix}-form-item-control{
+        width:auto;
+      }
+    }
+    .@{ant-prefix}-form-item-label{
+      // align-self: center;
+      width: 126px;
+      // min-width: 100px;
+    }
+    .multiExtComBox{
+        .@{ant-prefix}-form-item-label{
+          align-self: initial;
+          width: 126px;
+        }
+    }
+    .@{ant-prefix}-form-item-with-help{
+      .@{ant-prefix}-form-item-label{
+        align-self: initial;
+      }
+    }
+    .@{ant-prefix}-radio-wrapper{
+      margin-right: 24px;
+    }
+    
+    .@{ant-prefix}-form-item-control{
+        width: 530px;
+        flex:none;
+        // flex-grow: inherit; 
+        .@{ant-prefix}-select:not(.@{ant-prefix}select-customize-input) .@{ant-prefix}-select-selector{
+           border-radius: 4px;
+        }
+        .@{ant-prefix}-input-number-input, .@{ant-prefix}-input-affix-wrapper{
+          border-radius: 4px;
+        }
+        .@{ant-prefix}-input, .@{ant-prefix}-input-number{
+          border-radius: 4px;
+        }
+        .@{ant-prefix}-input-group>*:last-child{
+          border-radius:0 4px 4px 0;
+        }
+        .@{ant-prefix}-input-group>*:first-child,.@{ant-prefix}-input-group.@{ant-prefix}-input-group-compact>.@{ant-prefix}-select:first-child>.@{ant-prefix}-select-selector, .@{ant-prefix}-input-group.@{ant-prefix}-input-group-compact>.@{ant-prefix}-select-auto-complete:first-child .@{ant-prefix}-input, .@{ant-prefix}-input-group.@{ant-prefix}-input-group-compact>.@{ant-prefix}-cascader-picker:first-child .@{ant-prefix}-input{
+          border-radius:4px 0px 0px 4px;
+          
+        }
+        .@{ant-prefix}-input-group-addon:not(:first-child):not(:last-child), .@{ant-prefix}-input-group-wrap:not(:first-child):not(:last-child), .@{ant-prefix}-input-group>.@{ant-prefix}-input:not(:first-child):not(:last-child), .@{ant-prefix}-input-group>.@{ant-prefix}-picker:not(:first-child):not(:last-child){
+          border-radius: 0;
+        }
+
+      }
+      .@{ant-prefix}-form-item{
+        margin-left: 0;
+      }
+      
+    .customContronl{  
+      .@{ant-prefix}-form-item-control{
+        flex: none; 
+        width: auto;
+      }
+    }
+    .@{ant-prefix}-picker-input > input, .@{ant-prefix}-picker{
+        border-radius: 4px;
+      }
+    .@{ant-prefix}-radio-group .@{ant-prefix}-radio-button-wrapper:first-child{
+      border-radius: 4px 0 0 4px;
+    }
+    .@{ant-prefix}-radio-group .@{ant-prefix}-radio-button-wrapper:last-child{
+      border-radius: 0px 4px 4px 0px;
+    }
+    .@{ant-prefix}-form-item-has-feedback.@{ant-prefix}-form-item-has-success .@{ant-prefix}-form-item-children-icon, &.@{ant-prefix}-form-item-has-feedback.@{ant-prefix}-form-item-has-warning .@{ant-prefix}-form-item-children-icon, &.@{ant-prefix}-form-item-has-feedback.@{ant-prefix}-form-item-has-error .@{ant-prefix}-form-item-children-icon, &.@{ant-prefix}-form-item-has-feedback.@{ant-prefix}-form-item-is-validating .@{ant-prefix}-form-item-children-icon{
+        
+        // top: 17px
+        margin-top:-9px;
+      }
+    .checkField{
+      .@{ant-prefix}-form-item{
+        height: 20px;
+      }
+      .@{ant-prefix}-form-item-label > label{
+        height: 20px;
+      }
+      .@{ant-prefix}-form-item-control{
+        flex: none; 
+        width: auto;
+        // flex-direction: row;
+      }
+      .@{ant-prefix}-checkBoxWrap{
+          margin-top: 0;
+          .@{ant-prefix}-form-item-children-icon{
+            right: -6px
+          }
+      }
+      .@{ant-prefix}-form-item-control-input{
+        min-height: 20px;
+      }
+     
+      &.@{ant-prefix}-form-item-has-feedback.@{ant-prefix}-form-item-has-success .@{ant-prefix}-form-item-children-icon, &.@{ant-prefix}-form-item-has-feedback.@{ant-prefix}-form-item-has-warning .@{ant-prefix}-form-item-children-icon, &.@{ant-prefix}-form-item-has-feedback.@{ant-prefix}-form-item-has-error .@{ant-prefix}-form-item-children-icon, &.@{ant-prefix}-form-item-has-feedback.@{ant-prefix}-form-item-is-validating .@{ant-prefix}-form-item-children-icon{
+        right: -22px;
+        top: 11px
+      }
+      
+    }
+    .@{ant-prefix}-multiComWrap .@{ant-prefix}-form-item-explain{
+      margin-bottom: 0;
+    }
+    .extUploadImg{
+      .@{ant-prefix}-form-item-label{
+        height: 104px;
+        display: flex;
+        justify-content: flex-end;
+        
+      }
+      .@{ant-prefix}-form-item-label > label{
+          align-self: center;
+        }
+ 
+    }
+    .extUploadFile{
+      .@{ant-prefix}-form-item-label{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        height: 192px;
+      }
+    }
+    .extPreviewWrap{
+          position: absolute;
+          top: 0;
+          right: -405px;
+    }
+    .shortcontrol{
+      .@{ant-prefix}-form-item-control{
+           width:224px;
+        }
+      .@{ant-prefix}-picker{
+
+        width: 224px;
+      }
+    }
+   .areaControl .@{ant-prefix}-form-item-extra{
+    margin-top: 24px;
+    margin-bottom:0;
+   }
+   .@{ant-prefix}-form-item-with-help {
+     
+      .@{ant-prefix}-form-item-extra{
+      margin-top: 0;
+       margin-bottom: 24px;
+    }
+    
+    
+
+   }
+  }
+  &.KKBForm-modalWrap{
+    padding: 0;
+    .@{ant-prefix}-form-horizontal {
+      .@{ant-prefix}-form-item-control{
+        width: 320px
+      }
+      .shortcontrol{ // 有该属性则宽度为200
+        .@{ant-prefix}-form-item-control{
+           width:200px;
+        }
+       
+      .@{ant-prefix}-picker{
+
+        width: 200px;
+      }
+    }
+    }
+      
+    }
+  
+}

@@ -1,0 +1,20 @@
+.treeItem {
+  display: flex;
+
+  .treeTitle {
+    flex: 1;
+  }
+  .treeAction-hover {
+    display: none;
+  }
+
+  &:hover {
+    .treeAction-hover {
+      display: block;
+    }
+  }
+
+  .dragIcon {
+    cursor: move;
+  }
+}

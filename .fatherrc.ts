@@ -1,0 +1,71 @@
+import { IBundleOptions } from 'father';
+
+const options: IBundleOptions = {
+  runtimeHelpers: true,
+  autoprefixer: {
+    overrideBrowserslist: [
+      'last 2 versions',
+      'Firefox ESR',
+      '> 1%',
+      'ie >= 11',
+    ],
+  },
+  entry: 'src/index.ts',
+  cjs: 'babel',
+  esm: 'babel',
+  umd: {
+    name: 'antd-virtualized',
+    globals: {
+      react: 'React',
+      antd: 'antd',
+      lodash: 'lodash',
+      'react-dom': 'react-dom',
+      'react-router-dom':  'react-router-dom',
+      'antd/es/dropdown': 'antd',
+      'antd/es/tree': 'antd',
+      'antd/es/pagination': 'antd',
+      'antd/es/divider': 'antd',
+      'antd/es/checkbox': 'antd',
+      'antd/es/space': 'antd',
+      'antd/es/notification': 'antd',
+      'antd/es/upload': 'antd',
+      'antd/es/switch': 'antd',
+      'antd/es/popover': 'antd',
+      'antd/es/modal': 'antd',
+      'antd/es/menu': 'antd',
+      'antd/es/layout': 'antd',
+      'antd/es/table': 'antd',
+      'antd/es/avatar': 'antd',
+      'antd/es/tooltip': 'antd', 
+      'antd/es/tabs': 'antd',
+      'antd/es/spin': 'antd', 
+      'antd/es/row': 'antd', 
+      'antd/es/col': 'antd',
+      'antd/es/card': 'antd',
+      'antd/es/radio': 'antd',
+      'antd/es/select': 'antd',
+      'antd/es/tree-select': 'antd',
+      'antd/es/cascader': 'antd',
+      'antd/es/date-picker': 'antd',
+      'antd/es/input-number': 'antd', 
+      'antd/es/input': 'antd', 
+      'antd/es/form': 'antd', 
+      'antd/es/button': 'antd',
+      'antd/es/breadcrumb': 'antd',
+    },
+    file: 'index',
+  },
+  extractCSS: true,
+  extraBabelPlugins: [
+    [
+      'babel-plugin-import',
+      {
+        libraryName: 'antd',
+        libraryDirectory: 'es',
+        style: true,
+      },
+    ],
+  ],
+};
+
+export default options;

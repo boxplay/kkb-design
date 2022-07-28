@@ -1,0 +1,45 @@
+@import '../../lib/style/default.less';
+
+.@{ant-prefix}-dydnd-dataList {
+  padding: 6px 10px;
+  padding-top: 10px;
+  padding-left: 10px;
+  text-align: justify;
+  border: 1px solid #f0f0f0;
+}
+.@{ant-prefix}-dydnd-listItem {
+  position: relative;
+  min-height: 36px;
+  margin-bottom: 6px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #f0f0f0;
+  &:hover {
+    .@{ant-prefix}-actionBar {
+      display: block;
+    }
+  }
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+  .@{ant-prefix}-tit {
+    padding-bottom: 5px;
+    font-weight: bold;
+  }
+  .@{ant-prefix}-desc {
+    color: #ccc;
+    font-size: 12px;
+  }
+  .@{ant-prefix}-actionBar {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    display: none;
+    // background: #fff;
+    box-shadow: -20px 0 10px 10px #fff;
+    .@{ant-prefix}-action {
+      margin-right: 18px;
+      cursor: pointer;
+    }
+  }
+}

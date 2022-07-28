@@ -1,0 +1,2 @@
+export { message } from 'antd'
+

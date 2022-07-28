@@ -1,0 +1,2 @@
+export { Tag } from 'antd'
+

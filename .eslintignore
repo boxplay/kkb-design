@@ -1,0 +1,14 @@
+**/dist/**
+**/build/**
+**/node_modules/**
+**/server.js
+**/webpack.config*.js
+**/flow-typed/**
+src/serviceWorker.js
+public/*
+config/*
+postcss.config.js
+tsconfig.json
+setupTests.ts
+docs
+

@@ -1,0 +1,131 @@
+@import '../../lib/style/default.less';
+@imgWidth: 150px;
+@imgHeight: 106px;
+@bgCardColor: #F8F8FB;
+@bgCardHoverColor: #F1F1F6;
+@borderCardColor: #D1D4DA;
+
+@radiusCard: 4px;
+
+.@{ant-prefix}-containerWrap {
+  position: relative;
+  .@{ant-prefix}-upload-list-picture-card .@{ant-prefix}-upload-list-item {
+    padding: 0;
+  }
+  .@{ant-prefix}-progress-status-success .@{ant-prefix}-progress-bg {
+    background-color: @primary-color;
+  }
+  .@{ant-prefix}-upload-list-item-thumbnail {
+    //margin-top: 8px;
+  }
+  .@{ant-prefix}-upload-list-item-progress {
+    margin-left: 8px;
+  }
+  .@{ant-prefix}-upload-picture-card-wrapper{
+    width: auto;
+    .@{ant-prefix}-upload.@{ant-prefix}-upload-select-picture-card{
+      margin-bottom: 0;
+    }
+  }
+  .@{ant-prefix}-upload-list-picture .@{ant-prefix}-upload-list-item, 
+  .@{ant-prefix}-upload-list-picture-card .@{ant-prefix}-upload-list-item {
+    width: 100px;
+    height: 100px;
+    background-color: @bgCardColor;
+    border: 1px dashed @borderCardColor;
+    border-radius: @radiusCard;
+    &:hover {
+      background-color: @bgCardHoverColor;
+      border: 1px dashed @primary-color;
+    }
+  }
+  .@{ant-prefix}-upload{
+    &.@{ant-prefix}-upload-select-picture-card {
+      width: 100px;
+      height: 100px;
+      background-color: @bgCardColor;
+      border: 1px dashed @borderCardColor;
+      border-radius: @radiusCard;
+      &:hover {
+        background-color: @bgCardHoverColor;
+        border: 1px dashed @primary-color;
+      }
+    }
+  }
+  .@{ant-prefix}-imgDescUl {
+    margin-bottom: 0;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: absolute;
+    // top: 5px;
+    width: 500px;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    li {
+      width: 100%;
+      float: left;
+      text-align: left;
+      line-height: 24px;
+          color: rgba(0, 0, 0, 0.25);
+    }
+  }
+}
+
+// 隐藏icon删除按钮
+.@{ant-prefix}-hideDelIcon {
+  .@{ant-prefix}-upload-list-item-card-actions-btn {
+    display: none;
+  }
+}
+
+// 隐藏查看图片icon按钮
+.@{ant-prefix}-hideViewIcon {
+  .@{ant-prefix}-upload-list-item-actions > a {
+    display: none;
+  }
+}
+
+.@{ant-prefix}-imgWrap {
+  max-width: 86px;
+  max-height: 80px;
+  overflow: hidden;
+  img {
+    width: 100%;
+  }
+}
+
+// 左右切换icon
+.@{ant-prefix}-modal_wrap {
+  position: relative;
+
+  .@{ant-prefix}-needIcon_wrap {
+    position: absolute;
+    padding: 10px 0;
+    font-size: 30px;
+    color: #40a9ff;
+    z-index: 99999;
+  }
+
+  .@{ant-prefix}-needIcon_leftEnd,
+  .@{ant-prefix}-needIcon_rightEnd {
+    color: #cdcdcd;
+    cursor: default;
+  }
+
+  .@{ant-prefix}-needIcon_left,
+  .@{ant-prefix}-needIcon_leftEnd {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+  }
+
+  .@{ant-prefix}-needIcon_right,
+  .@{ant-prefix}-needIcon_rightEnd {
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+  }
+}

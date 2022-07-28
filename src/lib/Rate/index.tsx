@@ -1,0 +1,2 @@
+export { Rate } from 'antd'
+

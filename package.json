@@ -1,0 +1,142 @@
+{
+  "name": "@base/kkb-design",
+  "version": "4.0.5",
+  "description": "为组件开发场景而生的工具",
+  "publishConfig": {
+    "registry": "https://registry-npm.kaikeba.com/"
+  },
+  "scripts": {
+    "dev": "father build --watch",
+    "jest": "jest",
+    "build:css": "webpack --config config/webpack.config.js",
+    "build": "father build && node packCss.js",
+    "build:lib": "father build --cjs babel",
+    "doc:dev": "cross-env LIMIT=8192 increase-memory-limit && dumi dev",
+    "doc:build": "dumi build",
+    "prepublishOnly": "npm run build",
+    "postpublish": "auto-tag",
+    "publish:beta": "npm version prerelease --preid=beta && npm publish --tag beta",
+    "fedocs": "sh ./scripts/copy-docs.sh",
+    "test": "father test",
+    "test:cov": "father test --coverage"
+  },
+  "main": "./es/index.js",
+  "module": "./es/index.js",
+  "types": "./es/index.d.ts",
+  "maintainers": [
+    "cuiyu",
+    "zhanzhiqiang",
+    "zhangding"
+  ],
+  "keywords": [],
+  "author": {
+    "name": "cuiyu",
+    "email": "cuiyu@kaikeba.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://icode.kaikeba.com/feteam/kkb-design.git"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "es"
+  ],
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged",
+      "commit-msg": "vcm"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "pretty-quick --staged",
+      "eslint src/ --fix",
+      "git add"
+    ]
+  },
+  "peerDependencies": {
+    "@base/kkb-utils": ">=0.0.7",
+    "antd": ">=4.0.0",
+    "lodash": ">=4.0.0",
+    "react": ">=16.9.0",
+    "react-dom": ">=16.9.0",
+    "react-router-dom": ">=5.0.1"
+  },
+  "dependencies": {
+    "@ant-design/icons": "^4.6.2",
+    "@babel/runtime": "7.13.10",
+    "@base/auto-tag": "^1.0.4",
+    "@base/kkb-utils": "^0.0.8",
+    "@types/lodash": "^4.14.168",
+    "classnames": "^2.3.1",
+    "copy-to-clipboard": "^3.3.1",
+    "cross-env": "^7.0.3",
+    "increase-memory-limit": "^1.0.7",
+    "query-string": "^7.0.1",
+    "rc-cascader": "^3.4.2",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-image-crop": "^9.1.1",
+    "react-viewer": "^3.2.2",
+    "react-zoom-pan-pinch": "^2.1.3",
+    "rxjs": "^7.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-react": "^7.13.13",
+    "@base/kkb-ui-x": "^1.0.0",
+    "@types/classnames": "2.2.11",
+    "@types/enzyme": "^3.10.8",
+    "@types/jest": "^26.0.20",
+    "@types/react-beautiful-dnd": "^13.1.0",
+    "@types/react-router-dom": "5.1.7",
+    "@types/testing-library__dom": "^7.5.0",
+    "@typescript-eslint/eslint-plugin": "^4.17.0",
+    "@typescript-eslint/parser": "^4.17.0",
+    "@typescript-eslint/typescript-estree": "^4.17.0",
+    "@wojtekmaj/enzyme-adapter-react-17": "^0.4.1",
+    "antd": "4.17.4",
+    "axios": "^0.21.1",
+    "babel-jest": "^26.6.3",
+    "babel-plugin-import": "^1.13.3",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "dumi": "^1.1.38",
+    "enzyme": "^3.11.0",
+    "eslint": "^7.21.0",
+    "eslint-config-airbnb": "18.2.1",
+    "eslint-config-airbnb-base": "14.2.1",
+    "eslint-config-airbnb-typescript": "12.3.1",
+    "eslint-config-prettier": "8.1.0",
+    "eslint-formatter-pretty": "4.0.0",
+    "eslint-plugin-babel": "5.3.1",
+    "eslint-plugin-compat": "3.9.0",
+    "eslint-plugin-eslint-comments": "3.2.0",
+    "eslint-plugin-import": "2.22.1",
+    "eslint-plugin-jest": "24.1.9",
+    "eslint-plugin-jsx-a11y": "6.4.1",
+    "eslint-plugin-promise": "4.3.1",
+    "eslint-plugin-react": "7.22.0",
+    "eslint-plugin-react-hooks": "4.2.0",
+    "eslint-plugin-unicorn": "28.0.2",
+    "father": "^2.30.2",
+    "husky": "^5.1.3",
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.1",
+    "prettier": "^2.2.1",
+    "pretty-quick": "^3.1.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "typescript": "4.2.3",
+    "vcm-cli": "^1.0.5",
+    "video.js": "^7.13.3",
+    "webpack-cli": "^4.7.0"
+  }
+}
